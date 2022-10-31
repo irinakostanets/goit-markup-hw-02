@@ -18,6 +18,13 @@ body {
     height: 2279px;
     letter-spacing: 0.03em;
 }
+/* General rules */
+ul {list-style: none;}
+
+p {
+    color: var(--p-text-color);
+}
+
 .header {
 }
 /* Logo */
@@ -48,6 +55,14 @@ body {
 }
 .studio:hover,
 .studio:focus {
+    color: var(--accent-color);
+}
+.portfolio:hover,
+.portfolio:focus {
+    color: var(--accent-color);
+}
+.contacts:hover,
+.contacts:focus {
     color: var(--accent-color);
 }
 
@@ -146,13 +161,14 @@ body {
     color: var(--white-color);
     background-color: var(--accent-color) 
 }
-
-/* General rules */
-ul{
-    list-style: none;
+.project-title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
 }
-p {
-    color: var(--p-text-color);
+.project-type {
+    font-size: 16px;
+    line-height: 1.88;
 }
 
 /* Footer*/
