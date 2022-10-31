@@ -7,6 +7,7 @@
     --light-backgroud-color: #F5F5F5;
     --dark-backgroud-color: #2F303A;
     --white-color: #FFFFFF;
+    --button-color: #F5F4FA;
 }
 
 body {
@@ -16,9 +17,6 @@ body {
     width: 1600px;
     height: 2279px;
     letter-spacing: 0.03em;
-}
-button {
-    font-family: inherit;
 }
 .header {
 }
@@ -37,21 +35,22 @@ button {
     color: black;
 }
 /* Site-nav */
-.site-nav {}
-.site-nav-list {
-
-}
-.site-nav-studio {
-    color: var(--accent-color);
-    letter-spacing: 0.02em;
-    text-decoration: none;
-}
-.site-nav-portfolio,
-.site-nav-contacts {
+.studio,
+.portfolio,
+.contacts {
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
     color: var(--primary-text-color);
     letter-spacing: 0.02em;
     text-decoration: none;
 }
+.studio:hover,
+.studio:focus {
+    color: var(--accent-color);
+}
+
 .contact-email,
 .contact-tel {
     color: var(--p-text-color);
@@ -59,6 +58,12 @@ button {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+.contact-email:hover,
+.contact-email:focus {
+    color: var(--accent-color);
 }
 /* Main */
 
@@ -75,7 +80,7 @@ button {
     text-transform: uppercase;
     color: var(--white-color);
 }
-.hero .hero-button {
+.hero-button {
     background-color: var(--accent-color);
     color: var(--white-color);
     font-weight: 700;
@@ -86,13 +91,7 @@ button {
     text-align: center;
     letter-spacing: 0.06em;
 }
-
-
-/* Work */
-
-.section2 {
-    background-color: var(--light-backgroud-color);
-}
+/* Peculiarities */
 .section-title {
     font-size: 36px;
     line-height: 1.17;
@@ -106,6 +105,12 @@ button {
 .feature-item.text {
     font-size: 14px;
     line-height: 1.71;
+}
+
+/* Work */
+
+.section2 {
+    background-color: var(--light-backgroud-color);
 }
 
 /* Team */
@@ -127,14 +132,19 @@ button {
     text-align: center;
 }
 /* Portfolio servises */
-.button-secondary {     
-    background-color: var(--accent-color)
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+.button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    color: var(--primary-text-color);
+    background-color: var(--button-color);
     border-radius: 4px;
 }
-.button-primary {
-    background-color: #F5F4FA;
-    border-radius: 4px;
+.button:hover,
+.button:focus {
+    color: var(--white-color);
+    background-color: var(--accent-color) 
 }
 
 /* General rules */
@@ -144,6 +154,7 @@ ul{
 p {
     color: var(--p-text-color);
 }
+
 /* Footer*/
 .footer {
     background-color: var(--dark-backgroud-color);
@@ -169,4 +180,12 @@ p {
     font-size: 14px;
     line-height: 1.71;
     text-decoration: none;
+}
+.footer-email:hover,
+.footer-email:focus {
+    color: var(--accent-color);
+}
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
 }
