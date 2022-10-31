@@ -65,7 +65,11 @@ p {
 .contacts:focus {
     color: var(--accent-color);
 }
-
+.site-nav .studio.current,
+.site-nav .portfolio.current,
+.site-nav .contacts.current {
+    color: var(--accent-color);
+}
 .contact-email,
 .contact-tel {
     color: var(--p-text-color);
