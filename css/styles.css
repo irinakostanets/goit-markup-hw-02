@@ -40,7 +40,7 @@ p {color: var(--p-text-color);}
 
 /* Site-nav */
 
-.site-page {
+.site-nav .site-page {
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 14px;
